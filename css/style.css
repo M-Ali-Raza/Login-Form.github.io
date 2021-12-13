@@ -1,0 +1,81 @@
+/*CSS Reset*/
+*{
+    margin: 0;
+    padding: 0;
+}
+/*Background image*/
+body{
+    background: url(../img/sunset-1373171_1920.jpg) no-repeat center center fixed;
+    background-size: cover;
+}
+/*SignIn Form*/
+.container{
+    display: inline-block;
+    position: relative;
+    top: 110px;
+    left: 385px;
+    padding: 30px 55px;
+    animation: move 0.3s ease-in 0.5s 1 backwards;
+}
+.container::before{
+    background-color: white;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.1;
+    border-radius: 20px;
+}
+@keyframes move{
+    0%{
+        top: -458px;
+        left: 385px;
+    }
+    100%{
+        top: 110px;
+        left: 385px;
+    }
+}
+.container h1{
+    font-family:Arial, Helvetica, sans-serif;
+    display: inline-block;
+    border-bottom: 4px solid black;
+    margin-bottom: 10px;
+    cursor: default;
+}
+.box{
+    margin: 12px 0px;
+}
+.box label{
+    font-size: 20px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+.box input{
+    font-size: 20px;
+    font-family:Arial, Helvetica, sans-serif;
+    margin-top: 12px;
+    width: 373px;
+    background: none;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid black;
+}
+.btn{
+    outline: none;
+    font-size: 15px;
+    border-radius: 8px;
+    border: 2px solid black;
+    padding: 8px 16px;
+    background: none;
+    font-weight: bold;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: all 0.15s ease-in 0s;
+}
+.btn:hover{
+    color: white;
+    border: 2px solid white; 
+}
